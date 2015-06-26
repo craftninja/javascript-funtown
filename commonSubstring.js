@@ -21,12 +21,11 @@ function lcs(stringA, stringB) {
       answers.push(common);
     };
   };
+  var answer = '';
   if (answers.length > 0) {
-    var answer = answers.reduce(function(prevVal, currVal) {
+    answer = answers.reduce(function(prevVal, currVal) {
       return prevVal.length >= currVal.length ? prevVal : currVal;
     });
-  } else {
-    answer = '';
   };
   return answer;
 };
