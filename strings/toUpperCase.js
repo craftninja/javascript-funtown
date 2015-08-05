@@ -1,6 +1,6 @@
 function toUpperCase(string) {
   var lowerA = 97, lowerZ = 122, upperA = 65;
-  var lowerToUpper = upperA - lowerA
+  var lowerToUpper = upperA - lowerA;
   var upCased = '';
   string.split('').forEach(function(letter) {
     if (letter.charCodeAt(0) >= lowerA && letter.charCodeAt(0) <= lowerZ) {
@@ -18,4 +18,8 @@ console.log('actual:   ', toUpperCase(lower));
 
 var upper = 'UPPER';
 console.log('expected: ', 'UPPER');
+console.log('actual:   ', toUpperCase(upper));
+
+var upper = 'Words with Spaces!';
+console.log('expected: ', 'WORDS WITH SPACES!');
 console.log('actual:   ', toUpperCase(upper));
